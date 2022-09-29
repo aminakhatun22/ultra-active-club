@@ -5,9 +5,7 @@
 
 }
 
-.info-text p {
-    margin-bottom: 150;
-}
+
 
 .personal-info {
     display: flex;
@@ -16,4 +14,32 @@
     border-radius: 5px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.add-break {
+    margin-left: 15px;
+
+
+}
+
+.break-btn button {
+    margin-left: 3px;
+    padding: 5px;
+
+}
+
+.exercise-time {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: whitesmoke;
+}
+
+.time-p {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.exercise-detail {
+    margin-left: 15px;
 }

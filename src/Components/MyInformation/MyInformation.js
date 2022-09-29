@@ -27,6 +27,32 @@ const MyInformation = () => {
 
 
             </div>
+
+            <div className='add-break'>
+                <h3>Add A Break</h3>
+                <div className='break-btn'>
+                    <button>10s</button>
+
+                    <button>20s</button>
+                    <button>30s</button>
+                    <button>40s</button>
+                    <button>50s</button>
+                </div>
+            </div>
+
+            <div>
+                <h3 className='exercise-detail'>
+                    Exercise Details
+                </h3>
+                <div className='exercise-time'>
+                    <div><h3>Exercise time</h3></div>
+                    <div>
+                        <p className='time-p'>select</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
 
