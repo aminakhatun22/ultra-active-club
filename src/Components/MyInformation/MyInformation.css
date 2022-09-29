@@ -68,6 +68,16 @@
     margin-left: 5px;
 }
 
-/* .activity {
-    margin-top: 20px;
-} */
+.activity-completed {
+    margin-left: 45px;
+    margin-top: 10px;
+    padding: 30px;
+    width: 100px;
+
+}
+
+.activity-completed button {
+    background-color: blueviolet;
+    text-decoration: none;
+
+}

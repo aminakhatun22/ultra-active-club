@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Activity from '../Activities/Activity';
+
 import MyInformation from '../MyInformation/MyInformation';
 import './Exercise.css';
 
@@ -26,6 +27,8 @@ const Exercise = () => {
                     >
 
                     </Activity>)
+
+
                 }
             </div>
             <div className="cart-container">

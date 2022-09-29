@@ -59,15 +59,16 @@ const MyInformation = () => {
                 </div>
             </div>
 
-            <div>
-                <button className='activity'>
+
+
+
+
+            <div
+                className='activity-completed'>
+                <button >
                     Activity Completed
                 </button>
             </div>
-
-
-
-
 
 
         </div>
