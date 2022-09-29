@@ -15,9 +15,39 @@
 
 }
 
+@media (max-width: 576px) {
+    .exercise-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: auto;
+    }
+
+    .activity-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
 @media only screen and(max-width: 600px) {
     .exercise-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: auto;
     }
-}
+
+    .activity-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} */

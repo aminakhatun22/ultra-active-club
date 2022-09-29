@@ -6,6 +6,7 @@ import './Exercise.css';
 
 const Exercise = () => {
     const [activities, setActivities] = useState([]);
+    const [myTime, setMytime] = useState(0);
 
 
     useEffect
@@ -15,12 +16,14 @@ const Exercise = () => {
                 .then(data => setActivities(data))
         }, []);
     const [details, setDetails] = useState([]);
-    const handleAddToListClick = (activity) => {
+
+    const handleAddToListClick = (time) => {
+        setMytime(time + myTime);
 
 
-        const newDetails = [...details, activities];
+        // const newDetails = [...details, activities];
 
-        setDetails(newDetails);
+        // setDetails(newDetails);
 
     }
     return (
@@ -51,7 +54,7 @@ const Exercise = () => {
 
             </div>
             <div className="cart-container">
-                <MyInformation>
+                <MyInformation myTime={myTime}>
 
                 </MyInformation>
             </div>

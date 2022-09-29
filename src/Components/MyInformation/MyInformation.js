@@ -8,8 +8,8 @@ import './MyInformation.css';
 
 
 
-const MyInformation = (details) => {
-    console.log(details)
+const MyInformation = ({ details, myTime }) => {
+
 
     const [breaks, setBreaks] = useState(0);
     const breakTime = localStorage.getItem('break')
@@ -19,10 +19,12 @@ const MyInformation = (details) => {
     }
     let totalTime = 0;
     for (const detail in details) {
+        console.log(detail)
+
 
 
         totalTime = totalTime + detail.time;
-        console.log(totalTime)
+
     }
 
 
@@ -72,7 +74,7 @@ const MyInformation = (details) => {
                 <div className='exercise-time'>
                     <div className='exercise-h3'><h3>Exercise time</h3></div>
                     <div>
-                        <p className='time-p'>{totalTime}</p>
+                        <p className='time-p'>{myTime}s</p>
 
                     </div>
                 </div>
