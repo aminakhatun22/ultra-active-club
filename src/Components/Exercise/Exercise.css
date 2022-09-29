@@ -1,6 +1,7 @@
 .exercise-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
+
 }
 
 .activity-container {
@@ -10,4 +11,13 @@
     margin-left: 45px;
     margin-top: 10px;
     margin-bottom: 10px;
+
+
+}
+
+@media only screen and(max-width: 600px) {
+    .exercise-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

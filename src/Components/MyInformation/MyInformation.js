@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+
 import Toastify from '../Toastify/Toastify';
 import './MyInformation.css';
 
 
 
-const MyInformation = () => {
+
+
+const MyInformation = (details) => {
+
+    const [breaks, setBreaks] = useState(0);
+    const breakTime = localStorage.getItem('break')
+    const handleBreakTime = (e) => {
+        localStorage.setItem('break', e)
+        setBreaks(e);
+    }
+    let totalTime = 0;
+    for (const detail in details) {
+        console.log(details)
+
+        totalTime = totalTime + detail.time;
+        console.log(totalTime)
+    }
 
 
     return (
@@ -36,12 +54,13 @@ const MyInformation = () => {
             <div className='add-break'>
                 <h3>Add A Break</h3>
                 <div className='break-btn'>
-                    <button>10s</button>
+                    <button onClick={() => handleBreakTime(10)}>10s</button>
+                    <button onClick={() => handleBreakTime(20)}>20s</button>
+                    <button onClick={() => handleBreakTime(30)}>30s</button>
+                    <button onClick={() => handleBreakTime(40)}>40s</button>
+                    <button onClick={() => handleBreakTime(50)}>50s</button>
 
-                    <button>20s</button>
-                    <button>30s</button>
-                    <button>40s</button>
-                    <button>50s</button>
+
                 </div>
             </div>
 
@@ -52,14 +71,16 @@ const MyInformation = () => {
                 <div className='exercise-time'>
                     <div className='exercise-h3'><h3>Exercise time</h3></div>
                     <div>
-                        <p className='time-p'>select</p>
+                        <p className='time-p'>{totalTime}</p>
+
                     </div>
                 </div>
 
                 <div className='break-time'>
                     <div className='break-h3'><h3>Break time</h3></div>
                     <div>
-                        <p className='time-break'>select</p>
+
+                        <p className='time-break'>{breakTime}</p>
                     </div>
                 </div>
             </div>
