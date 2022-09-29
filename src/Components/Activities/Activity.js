@@ -18,7 +18,7 @@ const Activity = (props) => {
                 <p>Time required: {time}s</p>
             </div>
             <div className='add-btn'>
-                <button onClick={() => handleAddToListClick(activity.time)} >
+                <button onClick={() => handleAddToListClick(activity)} >
                     Add to list
 
                 </button>

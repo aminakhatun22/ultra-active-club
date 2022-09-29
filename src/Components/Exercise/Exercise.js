@@ -17,6 +17,7 @@ const Exercise = () => {
     const [details, setDetails] = useState([]);
     const handleAddToListClick = (activity) => {
 
+
         const newDetails = [...details, activities];
 
         setDetails(newDetails);
@@ -32,6 +33,8 @@ const Exercise = () => {
                 {
                     activities.map(activity =>
 
+
+
                         <Activity
                             key={activity.id}
 
@@ -42,7 +45,10 @@ const Exercise = () => {
                         </Activity>)
 
 
+
+
                 }
+
             </div>
             <div className="cart-container">
                 <MyInformation>

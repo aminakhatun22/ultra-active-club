@@ -9,6 +9,7 @@ import './MyInformation.css';
 
 
 const MyInformation = (details) => {
+    console.log(details)
 
     const [breaks, setBreaks] = useState(0);
     const breakTime = localStorage.getItem('break')
@@ -18,7 +19,7 @@ const MyInformation = (details) => {
     }
     let totalTime = 0;
     for (const detail in details) {
-        console.log(details)
+
 
         totalTime = totalTime + detail.time;
         console.log(totalTime)
