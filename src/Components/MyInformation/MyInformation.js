@@ -45,12 +45,29 @@ const MyInformation = () => {
                     Exercise Details
                 </h3>
                 <div className='exercise-time'>
-                    <div><h3>Exercise time</h3></div>
+                    <div className='exercise-h3'><h3>Exercise time</h3></div>
                     <div>
                         <p className='time-p'>select</p>
                     </div>
                 </div>
+
+                <div className='break-time'>
+                    <div className='break-h3'><h3>Break time</h3></div>
+                    <div>
+                        <p className='time-break'>select</p>
+                    </div>
+                </div>
             </div>
+
+            <div>
+                <button className='activity'>
+                    Activity Completed
+                </button>
+            </div>
+
+
+
+
 
 
         </div>
