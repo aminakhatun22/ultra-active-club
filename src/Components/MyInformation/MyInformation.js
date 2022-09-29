@@ -1,7 +1,12 @@
 import React from 'react';
+import Toastify from '../Toastify/Toastify';
 import './MyInformation.css';
 
+
+
 const MyInformation = () => {
+
+
     return (
         <div>
             <div className='info-text'>
@@ -63,12 +68,13 @@ const MyInformation = () => {
 
 
 
-            <div
-                className='activity-completed'>
-                <button >
-                    Activity Completed
-                </button>
+            <div>
+                <Toastify></Toastify>
+
             </div>
+
+
+
 
 
         </div>
@@ -77,5 +83,7 @@ const MyInformation = () => {
 
     );
 };
+
+
 
 export default MyInformation;
